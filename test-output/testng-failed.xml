@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="OHRMTest(failed)">
+    <classes>
+      <class name="com.TestNG.OHRMMain">
+        <methods>
+          <include name="logOut"/>
+          <include name="applicationLaunch"/>
+          <include name="applicationClose"/>
+          <include name="OHRMLoginTest"/>
+        </methods>
+      </class> <!-- com.TestNG.OHRMMain -->
+    </classes>
+  </test> <!-- OHRMTest(failed) -->
+  <test thread-count="2" parallel="tests" name="FacebookTest(failed)">
+    <classes>
+      <class name="com.TestNG.FacebookMain">
+        <methods>
+          <include name="applicationlose"/>
+          <include name="FacebookLoginTest"/>
+          <include name="applicationLaunch"/>
+        </methods>
+      </class> <!-- com.TestNG.FacebookMain -->
+    </classes>
+  </test> <!-- FacebookTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
